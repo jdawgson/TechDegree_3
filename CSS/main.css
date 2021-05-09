@@ -1,0 +1,273 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+/* text Styles */
+
+h1,
+h2 {
+  color: #2D3945;
+}
+
+h1,
+fieldset legend {
+  font-size: 22px;
+  color: #2D3945;
+  font-weight: 700;
+}
+
+form label {
+  font-size: 14px;
+}
+
+label {
+  color: #222;
+  font-weight: 500;
+}
+
+::placeholder {
+  color: #d3d3d3;
+}
+
+.option-title {
+  color: #2D3945;
+}
+
+footer p {
+  font-style: italic;
+  margin-top: 0;
+}
+
+button {
+  font-family: 'Merriweather', serif;
+}
+
+/* header styles */
+
+header {
+  background-color: #2D3945;
+  font-size: 1.21em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1em 0;
+  border-bottom: 2px solid #2d3945;
+}
+
+header h2 {
+  font-weight: 500;
+  font-size: 1em;
+  margin: 0 auto;
+  color: #fff;
+}
+
+
+/* main styles */
+
+main {
+  color: #a5a3a3;
+  background-color: white;
+  padding: 16px;
+}
+
+
+/* form styles */
+
+form {
+  border-top: 5px solid #2d3945;
+  position: relative;
+  padding-top: 24px;
+  margin-top: 32px;
+}
+
+input, textarea, select {
+  outline: none;
+}
+
+
+form::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 5px;
+  border-top: 2px solid #2d3945;
+}
+
+.radio input,
+.checkbox input {
+  display: inline;
+  width: auto;
+}
+
+form input,
+form label {
+  display: block;
+}
+
+.checkbox input,
+.radio input {
+  margin-right: 1em;
+}
+
+form input,
+form select {
+  border-radius: 5px;
+  border: none;
+  padding: 16px;
+  margin: 8px 0 16px;
+  background-color: #eff0f1;
+  position: relative;
+  width: 100%;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border: 2px solid #46698b;
+  box-shadow: none;
+}
+
+select, input, button {
+    border-width: 0px;
+}
+
+input::placeholder {
+  font-style: italic;
+  text-align: right;
+  font-size: 1.2em;
+}
+
+
+  .newsletter-details legend {
+    border-top: 2px solid black;
+    display: block;
+    padding-top: 1em;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .textarea label {
+    margin-bottom: 1em
+  }
+
+  .textarea {
+    margin-top: 1em;
+  }
+
+
+
+  .textarea, textarea {
+      background-color: #eff0f1;
+      border: 0;
+      border-radius: 5px;
+      width: 100%;
+      padding: 1em;
+      min-height: 100px;
+    }
+
+button[type="submit"] {
+  font-size: 16px;
+  background-color: #4ebbb5;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  margin: 16px 0;
+  padding: 16px;
+  width: 100%;
+}
+
+fieldset {
+  border: 0;
+}
+
+fieldset legend {
+  margin-bottom: 15px;
+}
+
+/* footer styles */
+
+footer {
+  min-height: 30px;
+  padding: 16px;
+  width: 100%;
+  color: #a5a3a3;
+}
+
+
+
+.wrapper,
+.clearfix {
+  clear: both;
+  display: table;
+}
+
+/* Styles for tablet screens */
+
+@media screen and (min-width: 768px) {
+
+  div {
+    overflow: auto;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  label {
+    float: left;
+    display: inline-block;
+    width: 25%;
+  }
+
+  .display-flex {
+      display: flex;
+      align-items: center;
+  }
+
+  .checkbox,
+  .radio {
+    margin-bottom: 0.75em;
+  }
+
+  .radio input,
+  .checkbox input {
+    margin-top: 2px;
+  }
+
+
+  form input,
+  form select {
+    display: inline-block;
+    float: left;
+    margin: 1em 0;
+    width: 75%;
+  }
+
+  .newsletter-details label {
+    width: 100%;
+  }
+
+  footer p {
+    max-width: 75%;
+    margin: 16px auto;
+  }
+
+  .footer__nav p {
+    float: left;
+  }
+
+
+}
