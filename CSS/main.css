@@ -105,6 +105,11 @@ form::before {
   border-top: 2px solid #2d3945;
 }
 
+form input[id="zip_code"] {
+  display: inline-block;
+  width: 50%;
+}
+
 .radio input,
 .checkbox input {
   display: inline;
@@ -247,6 +252,9 @@ footer {
     margin-top: 2px;
   }
 
+  form input[id="zip_code"] {
+    width: 25%;
+  }
 
   form input,
   form select {
